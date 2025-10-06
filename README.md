@@ -2,7 +2,7 @@
 
 Team 3 SEG 2900
 
-Members: Partick De La Cruz, Laura Ashley Nwembe, Marina Lavrenkova, Sukruth Rajesh (300477419)
+Members: Partick De La Cruz, Laura Ashley Nwembe, Marina Lavrenkova, Sukruth Rajesh
 
 Product Name: Roleo
 
