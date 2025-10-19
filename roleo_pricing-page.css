@@ -1,0 +1,60 @@
+body{
+    margin:2%;
+}
+h1{
+    text-align: center;
+}
+.dropdownbutton,input{
+    height:2%;
+}
+.dropdownbutton{
+    width:5%;
+}
+#pricing th,#pricing td{
+    width:33%;
+}
+input{
+    width:93%;
+}
+th{
+    padding: 5px;
+}
+#pricing,#pricestatus, #pricestatus th, #pricing td{
+    border:  solid goldenrod;
+    border-collapse:collapse;
+}
+#check{
+    text-align: left;
+}
+table+p{
+    text-align: justify;
+}
+label{
+    text-align: left;
+}
+#menu{
+    height:1%;
+}
+#menu td{
+    height:0%;
+    width:33%;
+}
+button{
+    height:100%;
+    width:100%;
+    background-color: white;
+}
+#menu img{
+    width:10%;
+} 
+
+#Ppricing{
+    text-align: center;
+}
+
+#pricing p{
+    text-align:center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration-thickness: 10px;
+    font-size: 20px;
+}

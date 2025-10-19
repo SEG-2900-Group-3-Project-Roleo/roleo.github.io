@@ -1,0 +1,51 @@
+body{
+    margin:2%;
+}
+h1{
+    text-align: center;
+}
+.dropdownbutton,input{
+    height:2%;
+}
+.dropdownbutton{
+    width:5%;
+}
+input{
+    width:93%;
+}
+#LA,#SR{
+    height:0%;
+    width:50%;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+#PD{
+    height:0%;
+    width:100%;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+button{
+    text-align: justify;
+}
+#LA-img,#SR-img{
+    width: 30%;
+}
+#PD-img{
+    width: 15%;
+}
+#menu{
+    height:1%;
+}
+#menu td{
+    height:0%;
+    width:33%;
+}
+button{
+    height:100%;
+    width:100%;
+    background-color: white;
+}
+#menu img{
+    width:10%;
+} 
