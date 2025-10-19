@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleo - Job Details</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+
+        .back-icon {
+            width: 24px;
+            height: 24px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page-title {
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 80px;
+            width: 60px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .job-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-left: 80px;
+            margin-right: 20px;
+        }
+
+        .job-section {
+            margin-bottom: 20px;
+        }
+
+        .job-section label {
+            display: block;
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .job-section .value {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .wavy-lines {
+            height: 100px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            background: repeating-linear-gradient(
+                transparent,
+                transparent 18px,
+                #f0f0f0 18px,
+                #f0f0f0 20px
+            );
+        }
+
+        .yes-box {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 60px;
+            text-align: center;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+            border-top: 1px solid #ddd;
+            background: white;
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            width: 80px;
+        }
+
+        .nav-icon {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-icon img {
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+
+        .nav-label {
+            font-size: 10px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="back-icon">←</div>
+        <h1 class="page-title">Roleo</h1>
+    </div>
+
+    <div class="sidebar">NO</div>
+
+    <div class="job-card">
+        <div class="job-section">
+            <label>Title</label>
+            <div class="wavy-lines"></div>
+        </div>
+
+        <div class="job-section">
+            <label>Employer</label>
+            <div class="wavy-lines" style="height: 40px;"></div>
+        </div>
+
+        <div class="job-section">
+            <label>Position/Wage</label>
+            <div class="wavy-lines" style="height: 100px;"></div>
+        </div>
+
+        <div class="job-section">
+            <label>Description</label>
+            <div class="wavy-lines" style="height: 150px;"></div>
+        </div>
+    </div>
+
+    <div class="yes-box">YES</div>
+
+    <div class="bottom-nav">
+        <div class="nav-item">
+            <div class="nav-icon profile">
+                <img src="profile-icon.png" alt="Profile">
+            </div>
+        </div>
+        <div class="nav-item">
+            <div class="nav-icon home">
+                <img src="home-icon.png" alt="Home">
+            </div>
+        </div>
+        <div class="nav-item">
+            <div class="nav-icon settings">
+                <img src="settings-icon.png" alt="Settings">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
