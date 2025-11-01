@@ -1,0 +1,101 @@
+body{
+    /*   Gradient Settings */
+   background: rgb(0,0,128);
+background: linear-gradient(159deg, rgba(0,0,128,1) 0%, rgba(0,191,255,1) 100%);
+background-attachment: fixed;
+
+/*Box Placement */
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+height: 100vh;
+gap: 40px;
+margin: 0;
+
+}
+h1{
+  text-align: center;
+  margin-top: 0px;
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(33, 140, 212)
+  
+}
+/*USE SHARED SETTINGS MUCH EASIER AND LESS TIME CONSUMING */
+#boxes{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 40px;
+}
+#Left, #Middle, #Right{
+    /*  Box Settings */
+    border-radius: 25px;
+  background-color: rgba(9, 30, 63, 0.591);
+  padding: 20px;
+  width: 400px;
+  height: 600px;
+/*   Text Settings */
+}
+/*html naturally makes 
+h2 > h3 > h4 
+in terms of font size so make it equal. */
+h2, h3, h4{
+display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+  font-family: fantasy;
+  color: rgb(119, 200, 232);
+  margin:0;
+  font-size: 40px;
+  transform: translateY(200px);
+
+}
+#sPicture, #pPicture, #lPicture{
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+  font-family: fantasy;
+  color: rgb(119, 200, 232);
+  margin:0;
+  font-size: 40px;
+  transform: translateY(-50px) translateX(90px);/* each list only allows one transformation.*/
+  clip-path: circle(40%);
+}
+#roll1, #roll2, #roll3 {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+  font-family: fantasy;
+  color: rgb(56, 122, 148);
+  margin:0;
+  font-size: 30px;
+  transform: translateY(-20px);
+}
+#bodytext1, #bodytext2, #bodytext3{
+  font-family:  fantasy;
+  font-size: 20px;
+  color: rgb(99, 162, 183);
+  font-weight: 100;
+
+  transform: translateY(-50px);
+}
+
+.fa-linkedin{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 119, 181);
+  margin:auto;
+  font-size: 30px;
+  transform: translateY(80px) translateX(40px);
+}
+#email{
+    transform: translateY(260px) translateX(100px);
+    font-family: fantasy;
+    font-size: 20px;
+    color: rgb(67, 196, 248);
+}
