@@ -1,105 +1,106 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
+/* .bar{
+    padding: 10px;
+    border: none;
 }
-body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    max-width: 480px;
-    margin: 0 auto;
-    padding-bottom: 100px;
-}
-h1{
-    text-align: center;
-}
-.dropdownbutton,input{
-    height:2%;
-}
-.dropdownbutton{
-    width:5%;
-}
-#pricing th,#pricing td{
-    width:33%;
-}
-/* input{
-    width:93%;
-} */
-th{
+
+#controls{
+    border:none;
     padding: 5px;
+    text-align: center;
+    /*background-color: rgb(176, 180, 190);
 }
-#pricing,#pricestatus, #pricestatus th, #pricing td{
-    border:  solid goldenrod;
-    border-collapse:collapse;
-}
-#check{
-    text-align: left;
-}
-table+p{
-    text-align: justify;
-}
-label{
-    text-align: left;
-}
-#menu{
-    height:1%;
-}
-#menu td{
-    height:0%;
-    width:33%;
-}
-button{
-    height:100%;
-    width:100%;
-    background-color: white;
-}
-#menu img{
-    width:10%;
+
+#controls button{
+    color: rgb(7, 55, 110);
+    border:hidden;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 } 
 
-#Ppricing{
+.pricing iframe{
+    border: none;
+}
+.bar h1{
+    float: left;
     text-align: center;
 }
 
-#pricing p{
-    text-align:center;
+#home, #features,#about-us,#meet-team{
+    background-color: white;;
+}
+
+#controls button:hover, #pricing{
+    background-color:rgb(176, 180, 190);
+    text-decoration: underline;
+}
+
+.pricing iframe{
+    border: none;
+    width: 100%;
+} */
+h1{
+    text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration-thickness: 10px;
-    font-size: 20px;
+    font-size: 3rem;
 }
-
-.bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.top-nav {
+    background-color: transparent;
+    padding: 20px;
     display: flex;
-    justify-content: space-around;
-    padding: 15px;
-    border-top: 1px solid #ddd;
-    background: white;
-    max-width: 480px;
-    margin: 0 auto;
-}
-
-.nav-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    width: 80px;
-}
-
-.nav-icon {
-    width: 40px;
-    height: 40px;
-    display: flex;
+    gap: 15px;
     align-items: center;
     justify-content: center;
 }
 
-.nav-icon img {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
+.nav-link {
+    color: #4a9eff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s;
+    padding: 10px 20px;
+    border: 2px solid #4a9eff;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.nav-link:hover {
+    background-color: #4a9eff;
+    color: #1a1a1a;
+}
+
+.nav-link.active {
+    background-color: #4a9eff;
+    color: #1a1a1a;
+}
+
+body{
+    /*background-image: url(https://htmlcolors.com/gradients-images/55-dark-blue-gradient.jpg);*/
+    background: linear-gradient(to right, #ddf8fe, #15b181);
+}
+.pricing{
+    margin: 30px 20px;
+    padding: 5% 15%;
+    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    height:100%;
+    display: flex;
+    gap: 40px;
+    font-size: 1.6rem;
+    font-family: fantasy;
+
+}
+
+#free, #plus, #pro {
+    border-radius: 10px;
+    background-color: rgb(9, 30, 63, 0.591);
+    /*opacity: 0.3;*/
+    align-items: flex-start;
+    width:33%;
+    height: 400px;
+    padding: 10px;
+    margin: 10px;
 }
