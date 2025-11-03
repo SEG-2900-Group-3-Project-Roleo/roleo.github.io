@@ -164,6 +164,59 @@ border-radius: 25px;
 
 /* end of description */
 
+/* AI RESUME BUILDER */
+
+#A.I {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.review-button {
+    background-color: transparent;
+    color: #4a9eff;
+    border: 2px solid #4a9eff;
+    border-radius: 8px;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.review-button:hover {
+    background-color: #4a9eff;
+    color: #1a1a1a;
+}
+
+.section-title {
+    color: #4a9eff;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ai-content {
+    display: flex;
+    justify-content: center;
+}
+
+.resume-preview {
+    width: 400px;
+    border: 3px solid #4a9eff;
+    border-radius: 8px;
+    padding: 30px;
+    background-color: transparent;
+}
+
+.resume-preview p {
+    color: #4a9eff;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+
 
 
 
