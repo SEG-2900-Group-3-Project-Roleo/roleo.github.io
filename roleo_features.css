@@ -164,4 +164,40 @@ border-radius: 25px;
 
 /* end of description */
 
+/* AI Resume Builder Section */
+* {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section-title {
+    color: #4a9eff;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+ai-content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+resume-preview {
+    flex: 1;
+    background-color: transparent;
+    border: 2px solid #4a9eff;
+    border-radius: 8px;
+    padding: 40px;
+    min-height: 400px;
+}
+
+resume-line {
+    height: 2px;
+    background-color: #4a9eff;
+    margin-bottom: 20px;
+    border-radius: 2px;
+
+
+
 
