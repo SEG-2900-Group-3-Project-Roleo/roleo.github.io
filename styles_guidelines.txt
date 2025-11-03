@@ -1,38 +1,36 @@
-Aqua Horizon:
-
 Display: flex
 
-Flex Direction: column (main layout), row (for #boxes section)
+Flex Direction: column (main layout), row (for #boxes, .pricing, .features sections)
 
 Alignment: justify-content: center; align-items: center;
 
-Gap between boxes: 40px
+Gap between boxes: 40px (standard), 15px (navigation), 100px (feature items)
 
-Container Height: 100vh (full screen height)
+Container Height: 100vh (full screen height), min-height: calc(100vh - 80px) (with navigation)
 
-Box Dimensions: 400px width × 600px height
+Box Dimensions: 400px width × 600px height (standard), 500px × 500px (description box), 400px–600px (resume preview)
 
-Box Corners: border-radius: 25px
+Box Corners: border-radius: 25px (content boxes), 20px (navigation), 8px–15px (buttons/cards)
 
 Box Hover Effect: translateY(-10px) with subtle glowing shadow
 
-COLOR PALETTE
+COLOR PALETTE:
 
-Background Gradient: linear-gradient(159deg, rgba(0,0,128,1) 0%, rgba(0,191,255,1) 100%)
+Background Gradient: linear-gradient(to right, #ddf8fe, #15b181)
 
 Box Background: rgba(9, 30, 63, 0.591)
 
-Navigation Link Default: rgb(119, 200, 232) border and text
+Navigation Link Default: #4a9eff border and text
 
-Navigation Link Hover / Active: background-color rgb(119, 200, 232); text-color rgba(9, 30, 63, 0.9)
+Navigation Link Hover / Active: background-color #4a9eff; color #1a1a1a
 
 Heading (h1): rgb(33, 140, 212)
 
-Subheadings (h2, h3, h4): rgb(119, 200, 232)
+Subheadings (h2, h3, h4, .section-title): rgb(119, 200, 232) or #4a9eff
 
 Role Text (#roll1–3): rgb(56, 122, 148)
 
-Body Text (#bodytext1–3): rgb(99, 162, 183)
+Body Text (#bodytext1–3, #descText): rgb(99, 162, 183) or #4a9eff
 
 LinkedIn Icon (.fa-linkedin): rgb(0, 119, 181)
 
@@ -40,17 +38,52 @@ Email Text (#email): rgb(67, 196, 248)
 
 Hover Shadow Glow: rgba(0, 191, 255, 0.2)
 
-TYPOGRAPHY
+Swipe Indicators: #ff4444 (left/reject), #44ff44 (right/accept)
 
-Main Title (h1): 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif — size 50px, bold, centered
+TYPOGRAPHY:
 
-Subheadings (h2, h3, h4): fantasy font — size 40px, lighter weight, centered, slight vertical translation
+Main Title (h1): 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif — size 40px–50px, bold, centered
+
+Logo (.logo): 'Dancing Script', cursive — size 400px–500px, weight 700, letter-spacing 30px, initial opacity: 0
+
+Subheadings (h2, h3, h4, .section-title): fantasy font — size 28px–40px, lighter weight, centered, slight vertical translation
 
 Role Text (#roll1–3): fantasy font — size 30px, light weight, centered alignment
 
-Body Text (#bodytext1–3): fantasy font — size 20px, weight 100, centered, slight upward translation
+Body Text (#bodytext1–3, #descText): fantasy font — size 20px, weight 100, centered or left-aligned, line-height 1.6
 
-Email Text (#email): fantasy font — size 20px, light, positioned with transform translateY(260px)
+Email Text (#email): fantasy font — size 20px, light, positioned with transform translateY(242px) translateX(100px)
 
-Navigation Links (.nav-link): 'Roboto', sans-serif — size 16px, weight 400, uppercase accent
+Navigation Links (.nav-link): 'Roboto', sans-serif — size 16px, weight 400, padding 10px 20px, border 2px solid #4a9eff, border-radius 20px
 
+Buttons (.review-button): 'Roboto', sans-serif — size 16px–20px, bold weight, padding 10px–15px 30px–60px, border 2px solid #4a9eff, border-radius 8px
+
+NOTE: AI Resume Builder box text (.resume-preview p) uses 'Franklin Gothic Medium' font — NOT fantasy font like "How It Works" description text
+
+INTERACTIVE EFFECTS:
+
+Transitions: all 0.3s (standard), all 1.5s ease-out (logo animation)
+
+Hover States: Navigation/Buttons — background-color #4a9eff; color #1a1a1a
+
+Box Hover: translateY(-10px) with shadow glow
+
+Cursors: pointer (buttons), grab/grabbing (draggable cards)
+
+Animations: Logo fade-in (opacity 0 → 1, translateY(-50px) → 0, 1.5s ease-out), Card stacking (scale(0.95), opacity 0.8), Swipe indicators (opacity 0 default, visible on interaction)
+
+NOTES:
+
+Aqua-teal gradient (#ddf8fe to #15b181) used across all pages
+
+Blue accent (#4a9eff) for all interactive elements
+
+Fantasy font used extensively for decorative text throughout site
+
+Transform properties (translateX, translateY) used for positioning
+
+Semi-transparent boxes create layered depth effect
+
+Profile images: clip-path: circle(40%)
+
+All interactive elements use smooth 0.3s transitions
