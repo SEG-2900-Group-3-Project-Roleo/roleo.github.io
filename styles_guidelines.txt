@@ -1,4 +1,4 @@
-Patrick:
+Aqua Horizon:
 
 Display: flex
 
@@ -14,11 +14,17 @@ Box Dimensions: 400px width × 600px height
 
 Box Corners: border-radius: 25px
 
+Box Hover Effect: translateY(-10px) with subtle glowing shadow
+
 COLOR PALETTE
 
 Background Gradient: linear-gradient(159deg, rgba(0,0,128,1) 0%, rgba(0,191,255,1) 100%)
 
 Box Background: rgba(9, 30, 63, 0.591)
+
+Navigation Link Default: rgb(119, 200, 232) border and text
+
+Navigation Link Hover / Active: background-color rgb(119, 200, 232); text-color rgba(9, 30, 63, 0.9)
 
 Heading (h1): rgb(33, 140, 212)
 
@@ -28,51 +34,23 @@ Role Text (#roll1–3): rgb(56, 122, 148)
 
 Body Text (#bodytext1–3): rgb(99, 162, 183)
 
-LinkedIn Icon: rgb(0, 119, 181)
+LinkedIn Icon (.fa-linkedin): rgb(0, 119, 181)
 
-Email Text: rgb(67, 196, 248)
+Email Text (#email): rgb(67, 196, 248)
+
+Hover Shadow Glow: rgba(0, 191, 255, 0.2)
 
 TYPOGRAPHY
 
-Main Title (h1): 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif — size 50px, bold, modern
+Main Title (h1): 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif — size 50px, bold, centered
 
-Subheadings (h2, h3, h4): fantasy font — size 40px, lighter weight
+Subheadings (h2, h3, h4): fantasy font — size 40px, lighter weight, centered, slight vertical translation
 
-Role Text: fantasy font — size 30px, light weight
+Role Text (#roll1–3): fantasy font — size 30px, light weight, centered alignment
 
-Body Text: fantasy font — size 20px, weight 100
+Body Text (#bodytext1–3): fantasy font — size 20px, weight 100, centered, slight upward translation
 
-Email Text: fantasy font — size 20px, light
+Email Text (#email): fantasy font — size 20px, light, positioned with transform translateY(260px)
 
-IMAGES
+Navigation Links (.nav-link): 'Roboto', sans-serif — size 16px, weight 400, uppercase accent
 
-Profile Pictures (#sPicture, #pPicture, #lPicture):
-
-Circular crop using clip-path: circle(40%)
-
-Positioned with transform: translateY(-50px) translateX(90px)
-
-EFFECTS & MOTION
-
-Transform used for vertical alignment of text and icons
-
-LinkedIn icon positioned with transform: translateY(80px) translateX(40px)
-
-Background-attachment: fixed 
-
-OVERALL THEME
-
-Palette: Navy to sky blue gradient with cool cyan and teal accents
-
-Typography: Combination of professional sans-serif and expressive fantasy fonts
-
-
-
-
-
-Sukruth:
-
-hello, im sukruth
-
-
-Laura:
