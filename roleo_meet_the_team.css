@@ -1,19 +1,141 @@
+/*Buttons*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.top-nav {
+    background-color: transparent;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link {
+    color: #4a9eff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s;
+    padding: 10px 20px;
+    border: 2px solid #4a9eff;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.nav-link:hover {
+    background-color: #4a9eff;
+    color: #1a1a1a;
+}
+
+.nav-link.active {
+    background-color: #4a9eff;
+    color: #1a1a1a;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    min-height: calc(100vh - 80px);
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 500px;
+    font-weight: 700;
+    color: #4a9eff;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 30px;
+    transform: scaleX(1.0);
+}
+
+.features {
+    display: flex;
+    gap: 100px;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #4a9eff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-arrow {
+    color: #4a9eff;
+    font-size: 40px;
+    line-height: 1;
+}
+
+.feature-label {
+    color: #4a9eff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    width: 180px;
+    border: 2px solid #4a9eff;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.sidebar-line {
+    height: 2px;
+    background-color: #4a9eff;
+    margin: 8px 0;
+}
+/* end of buttons*/
 body{
     /*   Gradient Settings */
-   background: rgb(0,0,128);
-background: linear-gradient(159deg, rgba(0,0,128,1) 0%, rgba(0,191,255,1) 100%);
-background-attachment: fixed;
+   background: linear-gradient(to right, #ddf8fe, #15b181);
+    color: #fff;
+    min-height: 100vh;
 
 /*Box Placement */
 display: flex;
 justify-content: center;
 flex-direction: column;
-align-items: center;
+align-items: centxer;
 height: 100vh;
 gap: 40px;
 margin: 0;
-
 }
+
+
+
 h1{
   text-align: center;
   margin-top: 0px;
@@ -99,3 +221,4 @@ display: flex;
     font-size: 20px;
     color: rgb(67, 196, 248);
 }
+
