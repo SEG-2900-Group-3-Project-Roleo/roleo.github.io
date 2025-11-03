@@ -164,30 +164,10 @@ border-radius: 25px;
 
 /* end of description */
 
-/* AI RESUME BUILDER */
-
 /* AI Resume Builder Section */
 #A.I {
     margin-top: 80px;
     text-align: center;
-}
-
-.review-button {
-    background-color: transparent;
-    color: #4a9eff;
-    border: 2px solid #4a9eff;
-    border-radius: 8px;
-    padding: 10px 30px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-bottom: 100px;
-    transition: all 0.3s;
-}
-
-.review-button:hover {
-    background-color: #4a9eff;
-    color: #1a1a1a;
 }
 
 .section-title {
@@ -200,6 +180,7 @@ border-radius: 25px;
 .ai-content {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .resume-preview {
@@ -215,6 +196,23 @@ border-radius: 25px;
     font-size: 14px;
     line-height: 1.6;
     text-align: left;
+}
+
+.review-button {
+    background-color: transparent;
+    color: #4a9eff;
+    border: 2px solid #4a9eff;
+    border-radius: 8px;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.review-button:hover {
+    background-color: #4a9eff;
+    color: #1a1a1a;
 }
 
 
