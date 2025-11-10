@@ -8,70 +8,76 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #1a1a1a;
+    background: linear-gradient(to right, #0C0042, #D4BC4E);
     color: #fff;
     min-height: 100vh;
 }
 
-.top-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: transparent;
-    padding: 20px;
+.nav{
     display: flex;
-    gap: 15px;
+    /* margin: 1%; */
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    z-index: 10;
+    height: 5%;
+}
+hr{
+    background: linear-gradient(to right, #0C0042, #D4BC4E);
+    /* background: linear-gradient(to right, #D4BC4E, #0C0042); */
+    /*opacity: 0.3;*/
+    border:none;
+    height: 2px;
+    margin: 0;
 }
 
-.nav-link {
-    color: #4a9eff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 400;
-    transition: all 0.3s;
-    padding: 10px 20px;
-    border: 2px solid #4a9eff;
-    border-radius: 20px;
-    background-color: transparent;
-}
+.logo-top {
 
-.nav-link:hover {
-    background-color: #4a9eff;
-    color: #1a1a1a;
-}
-
-.nav-link.active {
-    background-color: #4a9eff;
-    color: #1a1a1a;
-}
-
-.main-content {
-    display: flex;
-    padding-top: 80px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 60px 20px;
-    min-height: calc(100vh - 80px);
+    width: auto;
+    text-align: center;
 }
 
 .logo {
     font-family: 'Dancing Script', cursive;
-    font-size: 500px;
-    font-weight: 700;
-    color: #4a9eff;
-    margin-bottom: 40px;
-    text-align: center;
-    line-height: 1;
-    letter-spacing: 30px;
-    transform: scaleX(1.0);
+    font-size: 3rem;
+    font-weight: 2.5rem;
+    color: #5833FF;
 }
 
-.features {
+.top-nav {
+    background-color: transparent;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    width:50%;
+}
+
+.nav-link {
+    color: #5833FF;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 1.5rem;
+    transition: all 0.3s;
+    padding: 0.5rem 1rem;
+    border: 2px solid #5833FF;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.nav-link:hover, #active{
+    background-color: #5833FF;
+    color: #1a1a1a;
+}
+
+.search{
+    width:10%;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+/* .features {
     display: flex;
     gap: 100px;
     align-items: flex-start;
@@ -122,7 +128,7 @@ body {
     height: 2px;
     background-color: #4a9eff;
     margin: 8px 0;
-}
+} */
 /* end of buttons*/
 body{
     /*   Gradient Settings */
@@ -227,4 +233,5 @@ display: flex;
     font-size: 20px;
     color: rgb(67, 196, 248);
 }
+
 
