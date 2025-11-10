@@ -4,57 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roleo-pricing</title>
-    <link rel="stylesheet" href="roleo_pricing-page.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="csspractice.css" />
   </head>
   <body>
-    <!-- <div class="bar">
-      <h1>Roleo</h1>
-      <div id="controls">
-        <button id="home">Home</button>
-        <button id="features">Features</button>
-        <button id="pricing">Pricing</button>
-        <button id="about-us">About-us</button>
-        <button id="meet-team">Meet Team</button>
+    <div class="nav">
+      <div class="logo-top">
+        <h1 class="logo">Roleo</h1>
       </div>
-    </div> -->
-    <div id="Buttons">
-    <nav class="top-nav">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="roleo_features.html" class="nav-link">Features</a>
-      <a href="roleo_pricing-page.html" class="nav-link active">Pricing</a>
-      <a href="roleo_aboutus_page.html" class="nav-link">About Us</a>
-      <a href="roleo_meet_the_team.html" class="nav-link">Meet the Team</a>
-    </nav>
-      </div>
-    <h1>Pricing</h1>
-    <div class="pricing">
-      <div id="free">
+      <nav class="top-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="roleo_features.html" class="nav-link">Features</a>
+        <a href="roleo_pricing-page.html" class="nav-link" id="active">Pricing</a>
+        <a href="roleo_aboutus_page.html" class="nav-link">About Us</a>
+        <a href="roleo_meet_the_team.html" class="nav-link">Meet the Team</a>
+      </nav>
+      <input type="text" placeholder="Search" class="search" />
+    </div>
+    <h1>Pricing Plans</h1>
+    <strong>Find Your Fit — Whether You're Just Browsing or Ready to Automate</strong>
+    <p>Roleo offers flexible plans designed to meet you where you are in your job search. Whether you're casually exploring or actively applying, we've got a plan that fits your pace and ambition.</p>
+    <div id="pricing">
+      <div id="free" class="box">
         <h2>Free</h2>
-        <p id="freetext">
-          Access to GPT-5 Limited file uploads<br />Limited and slower image
-          generation<br />Limited memory and context<br />Limited deep research
+        <p class="text">
+          <ul>
+            <li>- Swipe through job listings</li>
+            <li>- Save accepted jobs to your personal list</li>
+            <li>Revisit saved jobs anytime</li>
+            <li>Access on desktop and mobile</li>
+          </ul>
         </p>
         <h3>$0 / month</h3>
       </div>
-      <div id="plus">
-        <h2>Plus</h2>
-        <p id="plustext">
-          Access to GPT-5<br />Unlimited file uploads<br />Faster image
-          generation<br />Increased memory and context<br />Advanced deep
-          research <br />Increased memory and context<br />Advanced deep
-          research
+      <div id="plus" class="box">
+        <h2>Premium</h2>
+        <p class="text">
+          <ul>
+            <li>Smart job recommendations based on your profil</li>
+            <li>Priority support</li>
+            <li>- Early access to new features</li>
+            <li>- AI-powered auto-apply (coming soon)</li>
+          </ul>
         </p>
-        <h3>$10 / month</h3>
+        <h3>$7.99 / month</h3>
       </div>
-      <div id="pro">
+      <div id="pro" class="box">
         <h2>Pro</h2>
-        <p id="protext">
-          Access to GPT-5<br />Unlimited file uploads<br />Faster image
-          generation<br />Increased memory and context<br />Advanced deep
-          research <br />Increased memory and context<br />Advanced deep
-          research
+        <p class="text">
+          <ul>
+            <li>Swipe-based candidate discovery</li>
+            <li>Job posting dashboard</li>
+            <li>AI-matching tools</li>
+            <li>Messaging and interview scheduling</li>
+          </ul>
         </p>
-        <h3>$20 / month</h3>
+        <h3>Coming Soon</h3>
       </div>
     </div>
   </body>
