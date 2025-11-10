@@ -6,12 +6,12 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to right, #0C0042, #D4BC4E);
     color: #fff;
     min-height: 100vh;
-}
+} */
 
 .nav{
     display: flex;
@@ -132,18 +132,19 @@ hr{
 /* end of buttons*/
 body{
     /*   Gradient Settings */
-   background: linear-gradient(to right, #ddf8fe, #15b181);
+   /* background: linear-gradient(to right, #ddf8fe, #15b181); */
+    background: linear-gradient(to right, #0C0042, #D4BC4E);
     color: #fff;
     min-height: 100vh;
 
 /*Box Placement */
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: centxer;
-height: 100vh;
-gap: 40px;
-margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: centxer;
+    height: 100vh;
+    gap: 40px;
+    margin: 0;
 }
 
 
@@ -233,5 +234,6 @@ display: flex;
     font-size: 20px;
     color: rgb(67, 196, 248);
 }
+
 
 
