@@ -210,7 +210,7 @@ h1 {
 .section-title {
   color: #4a9eff;
   font-size: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -221,15 +221,15 @@ h1 {
 }
 
 .resume-preview {
-  width: 400px;
-  border: 3px solid #4a9eff;
-  border-radius: 8px;
-  padding: 45px;
-  background-color: rgba(9, 30, 63, 0.591);
+  width: 3000px;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  padding: 225px;
+  background-color: rgb(255, 255, 255);
 }
 
 .resume-preview p {
-  color: #4a9eff;
+  color: #000000;
   font-size: 14px;
   line-height: 1.6;
   text-align: left;
