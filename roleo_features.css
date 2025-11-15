@@ -194,12 +194,12 @@ h1 {
   color: #4a9eff;
   border: 2px solid #4a9eff;
   border-radius: 8px;
-  padding: 10px 30px;
+  padding: 60px 100px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-  margin-bottom: 20px;
   transition: all 0.3s;
+  margin-right: 20px;
 }
 
 .review-button:hover {
@@ -209,7 +209,7 @@ h1 {
 
 .section-title {
   color: #4a9eff;
-  font-size: 28px;
+  font-size: 40px;
   margin-bottom: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -217,13 +217,14 @@ h1 {
 .ai-content {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .resume-preview {
   width: 400px;
   border: 3px solid #4a9eff;
   border-radius: 8px;
-  padding: 30px;
+  padding: 45px;
   background-color: rgba(9, 30, 63, 0.591);
 }
 
@@ -233,4 +234,3 @@ h1 {
   line-height: 1.6;
   text-align: left;
 }
-
