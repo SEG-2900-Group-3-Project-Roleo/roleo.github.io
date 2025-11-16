@@ -42,10 +42,11 @@ body {
     gap: 15px;
     align-items: center;
     width:50%;
+    margin-left: 425px;
 }
 
 .nav-link {
-    color: #5833FF;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 1.5rem;
@@ -58,7 +59,7 @@ body {
 
 .nav-link:hover, #active{
     background-color: #5833FF;
-    color: #1a1a1a;
+    color: #ffffff;
 }
 
 .search{
@@ -83,6 +84,7 @@ body {
   gap: 40px;
   justify-content: center;
   align-items: flex-start;
+  margin-top: 60px;
 }
 
 /* Description Section */
@@ -123,6 +125,7 @@ h1 {
   align-items: center;
   position: relative;
   min-height: 500px;
+  margin-top: 140px;
 }
 
 .job-card-container {
