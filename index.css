@@ -1,4 +1,3 @@
-/*insert homepage css*/
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +9,7 @@ body {
     background: linear-gradient(to right, #ddf8fe, #15b181);
     color: #fff;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .top-nav {
@@ -50,6 +50,7 @@ body {
     justify-content: center;
     padding: 60px 20px;
     min-height: calc(100vh - 80px);
+    position: relative;
 }
 
 .logo {
@@ -63,5 +64,134 @@ body {
     letter-spacing: 30px;
     transform: scaleX(1.0);
     opacity: 0;
+    position: relative;
+    z-index: 1;
 }
 
+/* Branches Container */
+.branches-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.branch {
+    position: absolute;
+    pointer-events: all;
+}
+
+.branch-line {
+    opacity: 0;
+}
+
+.branch-line line {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+}
+
+.branch-line path {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+}
+
+.branch-button {
+    position: absolute;
+    background-color: #4a9eff;
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s;
+    opacity: 0;
+    transform: scale(0.8);
+    white-space: nowrap;
+}
+
+.branch-button:hover {
+    background-color: #fff;
+    color: #4a9eff;
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(74, 158, 255, 0.4);
+}
+
+
+.branch-top-left {
+    top: 42%;
+    left: 53%;
+    transform: translate(-100%, -90%);
+}
+
+.branch-top-left .branch-button {
+    top: -40px;
+    left: -70px;
+}
+
+.branch-top-right {
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -80%);
+}
+
+.branch-top-right .branch-button {
+    top: -25px;
+    right: -15px;
+}
+
+.branch-right {
+    top: 54%;
+    left: 50%;
+    transform: translate(5%, 40%);
+}
+
+.branch-right .branch-button {
+    top: 80px;
+    right: -90px;
+}
+
+.branch-bottom {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+}
+
+.branch-bottom .branch-button {
+    bottom: -15px;
+    left: -85px;
+}
+
+/* Animations */
+@keyframes drawLine {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fadeInButton {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.branch-line.animate {
+    opacity: 1;
+}
+
+.branch-line.animate line {
+    animation: drawLine 1s ease-out forwards;
+}
+
+.branch-line.animate path {
+    animation: drawLine 1s ease-out forwards;
+}
+
+.branch-button.animate {
+    animation: fadeInButton 0.5s ease-out forwards;
+}
