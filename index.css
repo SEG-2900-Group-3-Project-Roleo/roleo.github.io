@@ -191,7 +191,7 @@ body::after {
 
 .branch-top-left {
     top: 42%;
-    left: 52%;
+    left: 55%;
     transform: translate(-100%, -90%);
 }
 
@@ -224,7 +224,7 @@ body::after {
 
 .branch-bottom {
     top: 50%;
-    left: 50%;
+    left: 52%;
     transform: translate(-50%, 10%);
 }
 
@@ -263,6 +263,7 @@ body::after {
 .branch-button.animate {
     animation: fadeInButton 0.5s ease-out forwards, buttonColorShift 60s ease-in-out infinite;
 }
+
 
 
 
