@@ -123,7 +123,7 @@ body {
 
 .branch-top-left {
     top: 42%;
-    left: 53%;
+    left: 52%;
     transform: translate(-100%, -90%);
 }
 
@@ -195,3 +195,4 @@ body {
 .branch-button.animate {
     animation: fadeInButton 0.5s ease-out forwards;
 }
+
