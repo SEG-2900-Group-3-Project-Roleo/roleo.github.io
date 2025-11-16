@@ -80,7 +80,7 @@ body::after {
     align-items: center;
     justify-content: center;
     padding: 60px 20px;
-    min-height: calc(100vh - 80px);
+    min-height: 100vh;
     position: relative;
 }
 
@@ -102,11 +102,10 @@ body::after {
 
 /* Branches Container */
 .branches-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     pointer-events: none;
     z-index: 15;
 }
@@ -161,9 +160,11 @@ body::after {
 
 
 .branch-top-left {
-    top: 42%;
-    left: 55%;
-    transform: translate(-100%, -90%);
+    top: 0;
+    left: 0;
+    transform: translate(-100%, -100%);
+    margin-top: -75px;
+    margin-left: 58px;
 }
 
 .branch-top-left .branch-button {
@@ -172,9 +173,11 @@ body::after {
 }
 
 .branch-top-right {
-    top: 45%;
-    left: 57%;
-    transform: translate(0%, -80%);
+    top: 0;
+    left: 0;
+    transform: translate(0%, -100%);
+    margin-top: -20px;
+    margin-left: 80px;
 }
 
 .branch-top-right .branch-button {
@@ -183,9 +186,11 @@ body::after {
 }
 
 .branch-right {
-    top: 55%;
-    left: 54%;
-    transform: translate(5%, 40%);
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+    margin-top: 99px;
+    margin-left: 25px;
 }
 
 .branch-right .branch-button {
@@ -194,9 +199,11 @@ body::after {
 }
 
 .branch-bottom {
-    top: 50%;
-    left: 51%;
-    transform: translate(-50%, 10%);
+    top: 0;
+    left: 0;
+    transform: translate(-50%, 0%);
+    margin-top: 50px;
+    margin-left: 2px;
 }
 
 .branch-bottom .branch-button {
