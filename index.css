@@ -4,12 +4,23 @@
     box-sizing: border-box;
 }
 
+@keyframes gradientShift {
+    0% {
+        background: linear-gradient(to right, #ddf8fe, #15b181);
+    }
+    100% {
+        background: linear-gradient(to right, #0C0042, #D4BC4E);
+    }
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to right, #ddf8fe, #15b181);
     color: #fff;
     min-height: 100vh;
     overflow: hidden;
+    animation: gradientShift 30s ease-in-out infinite alternate;
+    background-size: 100% 100%;
 }
 
 .top-nav {
@@ -195,4 +206,3 @@ body {
 .branch-button.animate {
     animation: fadeInButton 0.5s ease-out forwards;
 }
-
