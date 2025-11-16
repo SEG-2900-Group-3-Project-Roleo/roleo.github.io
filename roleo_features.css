@@ -212,6 +212,7 @@ h1 {
   font-size: 40px;
   margin-bottom: 40px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 200px;
 }
 
 .ai-content {
@@ -221,10 +222,10 @@ h1 {
 }
 
 .resume-preview {
-  width: 600px;
+  width: 800px;
   border: 3px solid #ffffff;
   border-radius: 10px;
-  padding: 225px;
+  padding: 325px;
   background-color: rgb(255, 255, 255);
 }
 
@@ -234,6 +235,3 @@ h1 {
   line-height: 1.6;
   text-align: left;
 }
-
-
-
