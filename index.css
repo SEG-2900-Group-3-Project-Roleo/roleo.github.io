@@ -74,37 +74,6 @@ body::after {
     }
 }
 
-.top-nav {
-    background-color: transparent;
-    padding: 20px;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-link {
-    color: #4a9eff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 400;
-    transition: all 0.3s;
-    padding: 10px 20px;
-    border: 2px solid #4a9eff;
-    border-radius: 20px;
-    background-color: transparent;
-}
-
-.nav-link:hover {
-    background-color: #4a9eff;
-    color: #1a1a1a;
-}
-
-.nav-link.active {
-    background-color: #4a9eff;
-    color: #1a1a1a;
-}
-
 .main-content {
     display: flex;
     flex-direction: column;
@@ -139,7 +108,7 @@ body::after {
     top: 0;
     left: 0;
     pointer-events: none;
-    z-index: 5;
+    z-index: 15;
 }
 
 .branch {
@@ -169,7 +138,7 @@ body::after {
 .branch-button {
     position: absolute;
     background-color: #4a9eff;
-    color: #ffffff;  /* Changed from #1a1a1a to #ffffff */
+    color: #ffffff;
     text-decoration: none;
     padding: 15px 30px;
     border-radius: 25px;
@@ -179,6 +148,8 @@ body::after {
     opacity: 0;
     transform: scale(0.8);
     white-space: nowrap;
+    pointer-events: auto;
+    cursor: pointer;
 }
 
 .branch-button:hover {
@@ -201,8 +172,8 @@ body::after {
 }
 
 .branch-top-right {
-    top: 50%;
-    left: 53%;
+    top: 45%;
+    left: 57%;
     transform: translate(0%, -80%);
 }
 
@@ -212,7 +183,7 @@ body::after {
 }
 
 .branch-right {
-    top: 54%;
+    top: 55%;
     left: 54%;
     transform: translate(5%, 40%);
 }
@@ -224,7 +195,7 @@ body::after {
 
 .branch-bottom {
     top: 50%;
-    left: 52%;
+    left: 51%;
     transform: translate(-50%, 10%);
 }
 
@@ -263,7 +234,3 @@ body::after {
 .branch-button.animate {
     animation: fadeInButton 0.5s ease-out forwards, buttonColorShift 60s ease-in-out infinite;
 }
-
-
-
-
