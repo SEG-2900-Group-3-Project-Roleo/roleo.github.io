@@ -4,23 +4,74 @@
     box-sizing: border-box;
 }
 
-@keyframes gradientShift {
-    0% {
-        background: linear-gradient(to right, #ddf8fe, #15b181);
-    }
-    100% {
-        background: linear-gradient(to right, #0C0042, #D4BC4E);
-    }
-}
-
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #ddf8fe, #15b181);
+    position: relative;
     color: #fff;
     min-height: 100vh;
     overflow: hidden;
-    animation: gradientShift 30s ease-in-out infinite alternate;
-    background-size: 100% 100%;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ddf8fe, #15b181);
+    z-index: -2;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #0C0042, #D4BC4E);
+    opacity: 0;
+    z-index: -1;
+    animation: fadeGradient 60s ease-in-out infinite;
+}
+
+@keyframes fadeGradient {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes logoColorShift {
+    0%, 100% {
+        color: #4a9eff;
+    }
+    50% {
+        color: #5833FF;
+    }
+}
+
+@keyframes lineColorShift {
+    0%, 100% {
+        stroke: #4a9eff;
+    }
+    50% {
+        stroke: #5833FF;
+    }
+}
+
+@keyframes buttonColorShift {
+    0%, 100% {
+        background-color: #4a9eff;
+        color: #ffffff;
+    }
+    50% {
+        background-color: #5833FF;
+        color: #ffffff;
+    }
 }
 
 .top-nav {
@@ -72,11 +123,12 @@ body {
     margin-bottom: 40px;
     text-align: center;
     line-height: 1;
-    letter-spacing: 30px;
+    letter-spacing: 10px;
     transform: scaleX(1.0);
     opacity: 0;
     position: relative;
-    z-index: 1;
+    z-index: 10;
+    animation: logoColorShift 60s ease-in-out infinite;
 }
 
 /* Branches Container */
@@ -109,16 +161,21 @@ body {
     stroke-dashoffset: 600;
 }
 
+.branch-line line,
+.branch-line path {
+    animation: lineColorShift 60s ease-in-out infinite;
+}
+
 .branch-button {
     position: absolute;
     background-color: #4a9eff;
-    color: #1a1a1a;
+    color: #ffffff;  /* Changed from #1a1a1a to #ffffff */
     text-decoration: none;
     padding: 15px 30px;
     border-radius: 25px;
     font-weight: 600;
     font-size: 18px;
-    transition: all 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
     opacity: 0;
     transform: scale(0.8);
     white-space: nowrap;
@@ -196,13 +253,13 @@ body {
 }
 
 .branch-line.animate line {
-    animation: drawLine 1s ease-out forwards;
+    animation: drawLine 1s ease-out forwards, lineColorShift 60s ease-in-out infinite;
 }
 
 .branch-line.animate path {
-    animation: drawLine 1s ease-out forwards;
+    animation: drawLine 1s ease-out forwards, lineColorShift 60s ease-in-out infinite;
 }
 
 .branch-button.animate {
-    animation: fadeInButton 0.5s ease-out forwards;
+    animation: fadeInButton 0.5s ease-out forwards, buttonColorShift 60s ease-in-out infinite;
 }
