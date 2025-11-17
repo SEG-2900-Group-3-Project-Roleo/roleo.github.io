@@ -58,6 +58,15 @@ body {
     color: #5833FF;
 }
 
+.top-nav {
+    background-color: transparent;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    width:50%;
+    margin-left: 150px;
+}
+
 .nav-link {
     color: #ffffff;
     text-decoration: none;
