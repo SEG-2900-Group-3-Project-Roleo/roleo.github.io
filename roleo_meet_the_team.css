@@ -82,7 +82,7 @@ hr {
 }
 
 .nav-link {
-    font-family: 'Roboto', sans-serif;
+    font-family: font-family: "Lexend", sans-serif;
     color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
@@ -186,7 +186,7 @@ h1 {
     text-align: center;
     margin-top: 0px;
     font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: font-family: "Lexend", sans-serif;
     color: rgb(33, 140, 212)
 }
 
@@ -237,7 +237,7 @@ h4 {
 #roll1,
 #roll2,
 #roll3 {
-    font-family: fantasy;
+    font-family: font-family: "Lexend", sans-serif;
     color: #932f6d;
     margin: 0;
     font-size: 30px;
@@ -246,7 +246,7 @@ h4 {
 #bodytext1,
 #bodytext2,
 #bodytext3 {
-    font-family: fantasy;
+    font-family: font-family: "Lexend", sans-serif;
     font-size: 18px;
     color: #F6F2FF;
     font-weight: 100;
@@ -255,7 +255,7 @@ h4 {
 }
 
 #email {
-    font-family: fantasy;
+    font-family: font-family: "Lexend", sans-serif;
     font-size: 18px;
     gap: 8px; 
     color: #4ad3e2;
@@ -270,3 +270,4 @@ h4 {
     margin: 10px auto 0 auto;
     font-size: 28px;
 }
+
