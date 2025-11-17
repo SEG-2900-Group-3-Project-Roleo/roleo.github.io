@@ -79,6 +79,7 @@ hr {
     gap: 15px;
     flex: 1;
     margin-left: 150px;
+    font-family: "Lexend", sans-serif;
 }
 
 .nav-link {
@@ -120,6 +121,7 @@ hr {
 }
 
 body {
+    font-family: "Lexend", sans-serif;
     padding-top: 150px;
     position: relative;
     color: #fff;
@@ -234,19 +236,15 @@ h4 {
     font-size: 40px;
 }
 
-#roll1,
-#roll2,
-#roll3 {
-    font-family: font-family: "Lexend", sans-serif;
+#roll1,#roll2,#roll3 {
+    font-family: "Lexend", sans-serif;
     color: #932f6d;
     margin: 0;
     font-size: 30px;
 }
 
-#bodytext1,
-#bodytext2,
-#bodytext3 {
-    font-family: font-family: "Lexend", sans-serif;
+#bodytext1,#bodytext2,#bodytext3 {
+    font-family: "Lexend", sans-serif;
     font-size: 18px;
     color: #F6F2FF;
     font-weight: 100;
@@ -255,7 +253,7 @@ h4 {
 }
 
 #email {
-    font-family: font-family: "Lexend", sans-serif;
+    font-family: "Lexend", sans-serif;
     font-size: 18px;
     gap: 8px; 
     color: #4ad3e2;
@@ -270,6 +268,7 @@ h4 {
     margin: 10px auto 0 auto;
     font-size: 28px;
 }
+
 
 
 
