@@ -199,8 +199,6 @@ h1 {
     align-items: flex-start;
     gap: 40px;
     flex-wrap: wrap;
-    min-height: 100%;
-    height: auto;
 }
 
 #Left div,
@@ -214,7 +212,8 @@ h1 {
     background-color: rgba(9, 30, 63, 0.591);
     padding: 20px;
     width: 400px;
-    height: 600px;
+    min-height: 100%;
+    height: auto;
     gap: 10px;
 }
 
@@ -270,6 +269,7 @@ h4 {
     margin: 10px auto 0 auto;
     font-size: 28px;
 }
+
 
 
 
