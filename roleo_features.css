@@ -108,6 +108,7 @@ body::after {
     align-items: center;
     width:50%;
     margin-left: 425px;
+    font-family: "Lexend", sans-serif;
 }
 
 .nav-link {
@@ -333,6 +334,7 @@ h1 {
 .upload-button-inside:hover {
   background-color: #3585d6;
 }
+
 
 
 
