@@ -34,7 +34,7 @@ body::after {
   background: linear-gradient(to right, #ddf8fe, #15b181);
   opacity: 0;
   z-index: -1;
-  animation: fadeGradient 60s ease-in-out infinite;
+  animation: fadeGradient 30s ease-in-out infinite;
 }
 
 @keyframes fadeGradient {
@@ -97,7 +97,7 @@ body::after {
     font-size: 3rem;
     font-weight: 2.5rem;
     color: #5833FF;
-    animation: logoColorShift 60s ease-in-out infinite;
+    animation: logoColorShift 30s ease-in-out infinite;
     cursor: pointer;
 }
 
@@ -119,7 +119,7 @@ body::after {
     border: 2px solid #5833FF;
     border-radius: 20px;
     background-color: transparent;
-    animation: navBorderColorShift 60s ease-in-out infinite;
+    animation: navBorderColorShift 30s ease-in-out infinite;
 }
 
 .nav-link:hover {
@@ -127,7 +127,7 @@ body::after {
 }
 
 #active {
-    animation: navActiveColorShift 60s ease-in-out infinite;
+    animation: navActiveColorShift 30s ease-in-out infinite;
     box-shadow: 0 0 10px rgba(88, 51, 255, 0.5);
 }
 
@@ -153,7 +153,7 @@ body::after {
   gap: 40px;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 /* Description Section */
@@ -333,4 +333,5 @@ h1 {
 .upload-button-inside:hover {
   background-color: #3585d6;
 }
+
 
