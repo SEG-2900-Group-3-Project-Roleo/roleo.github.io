@@ -30,9 +30,12 @@ container.addEventListener("mousedown", (e) => {
   if (!currentCard) return;
   isDragging = true;
   startX = e.clientX;
+  // Remove any existing transitions to make dragging smooth
+  currentCard.style.transition = "none";
 });
 
-container.addEventListener("mousemove", (e) => {
+// Use global mousemove to track movement even outside container
+document.addEventListener("mousemove", (e) => {
   if (!isDragging || !currentCard) return;
   const deltaX = e.clientX - startX;
   currentCard.style.transform = `translateX(${deltaX}px) rotate(${deltaX / 10}deg)`;
@@ -40,7 +43,8 @@ container.addEventListener("mousemove", (e) => {
   swipeRight.style.opacity = deltaX > 50 ? 1 : 0;
 });
 
-container.addEventListener("mouseup", (e) => {
+// Use global mouseup to detect release anywhere on the page
+document.addEventListener("mouseup", (e) => {
   if (!isDragging || !currentCard) return;
   const deltaX = e.clientX - startX;
   isDragging = false;
