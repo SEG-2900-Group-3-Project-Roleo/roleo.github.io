@@ -5,6 +5,28 @@
     box-sizing: border-box;
 }
 
+@keyframes navBorderColorShift {
+    0%, 100% {
+        border-color: #5833FF;
+    }
+    50% {
+        border-color: #4a9eff;
+    }
+}
+
+@keyframes navActiveColorShift {
+    0%, 100% {
+        background-color: #5833FF;
+        border-color: #5833FF;
+        box-shadow: 0 0 10px rgba(88, 51, 255, 0.5);
+    }
+    50% {
+        background-color: #4a9eff;
+        border-color: #4a9eff;
+        box-shadow: 0 0 10px rgba(74, 158, 255, 0.5);
+    }
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to right, #0C0042, #D4BC4E);
@@ -36,29 +58,25 @@ body {
     color: #5833FF;
 }
 
-.top-nav {
-    background-color: transparent;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    width:50%;
-}
-
 .nav-link {
-    color: #5833FF;
+    color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 1.5rem;
-    transition: all 0.3s;
     padding: 0.5rem 1rem;
     border: 2px solid #5833FF;
     border-radius: 20px;
     background-color: transparent;
+    animation: navBorderColorShift 60s ease-in-out infinite;
 }
 
-.nav-link:hover, #active{
-    background-color: #5833FF;
-    color: #1a1a1a;
+.nav-link:hover {
+    background-color: rgba(88, 51, 255, 0.3);
+}
+
+#active {
+    animation: navActiveColorShift 60s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(88, 51, 255, 0.5);
 }
 
 .search{
