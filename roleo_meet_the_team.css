@@ -78,7 +78,7 @@ hr {
     justify-content: center;
     gap: 15px;
     flex: 1;
-    margin-left: 150px;
+    margin-left: 500px;
 }
 
 .nav-link {
@@ -270,4 +270,5 @@ h4 {
     margin: 10px auto 0 auto;
     font-size: 28px;
 }
+
 
