@@ -88,7 +88,7 @@ hr {
 body {
     /*   Gradient Settings */
     /* background: linear-gradient(to right, #ddf8fe, #15b181); */
-    padding-top: 100px;
+    padding-top: 150px;
     background: linear-gradient(to right, #0C0042, #D4BC4E);
     color: #fff;
     min-height: flex;
@@ -212,4 +212,5 @@ h4 {
     margin: 10px auto 0 auto;
     font-size: 28px;
 }
+
 
