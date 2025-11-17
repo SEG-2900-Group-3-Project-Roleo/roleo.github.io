@@ -39,63 +39,40 @@
 
 .nav {
     display: flex;
-    align-items: center;
-    padding: 0px 40px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    height: 80px;
-    background-color: transparent;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 5%;
 }
 
-hr {
-    background: linear-gradient(to right, #0C0042, #D4BC4E);
-    border: none;
-    height: 2px;
-    margin: 0;
-}
-
-.logo-top { 
+.logo-top {
     flex: 0 0 auto;
 }
 
 .logo {
     font-family: 'Dancing Script', cursive;
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 3rem;
     color: #5833FF;
-    line-height: 1;
     animation: logoColorShift 30s ease-in-out infinite;
     cursor: pointer;
 }
 
 .top-nav {
     display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 15px;
+    justify-content: center;
     flex: 1;
-    margin-left: 150px;
     font-family: "Lexend", sans-serif;
 }
 
 .nav-link {
-    font-family: "Lexend", sans-serif;
     color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
-    font-weight: 500;
     padding: 0.5rem 1rem;
     border: 2px solid #5833FF;
     border-radius: 20px;
     background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
     animation: navBorderColorShift 30s ease-in-out infinite;
 }
 
@@ -109,15 +86,12 @@ hr {
 }
 
 .search {
+    flex: 0 0 auto;
     width: 10%;
-    align-items: center;
     border: 2px solid black;
     border-radius: 15px;
     padding: 0.5rem 1rem;
     background-color: #fff;
-    font-family: "Lexend", sans-serif;
-
-    font-size: 1rem;
     opacity: 0.5;
 }
 
@@ -274,6 +248,7 @@ h4 {
     margin: 10px auto 0 auto;
     font-size: 28px;
 }
+
 
 
 
