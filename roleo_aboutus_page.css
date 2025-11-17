@@ -46,7 +46,7 @@
 }
 
 body {
-    font-family: "Lexend", sans-serif;
+    font-family: "Lexend";
     position: relative;
     color: #fff;
     min-height: 100vh;
@@ -117,7 +117,6 @@ hr{
     align-items: center;
     width:50%;
     margin-left: 200px;
-    font-family: "Lexend", sans-serif;
 }
 
 .nav-link {
