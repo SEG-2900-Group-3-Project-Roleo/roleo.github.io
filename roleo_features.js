@@ -63,4 +63,63 @@ function handleSwipe(deltaX) {
   }
 }
 
+// Resume upload functionality
+const resumeUpload = document.getElementById('resumeUpload');
+const resumeText = document.getElementById('resumeText');
+const pdfCanvas = document.getElementById('pdfCanvas');
 
+
+pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+resumeUpload.addEventListener('change', async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+
+  const fileExtension = file.name.split('.').pop().toLowerCase();
+  const uploadButton = document.querySelector('.upload-button-inside');
+  
+
+  uploadButton.style.display = 'none';
+
+  if (fileExtension === 'txt') {
+
+    pdfCanvas.style.display = 'none';
+    resumeText.style.display = 'block';
+    const text = await file.text();
+    resumeText.textContent = text;
+  } else if (fileExtension === 'pdf') {
+    // Handle PDF files
+    resumeText.style.display = 'none';
+    pdfCanvas.style.display = 'block';
+    
+    const fileReader = new FileReader();
+    fileReader.onload = async function() {
+      const typedarray = new Uint8Array(this.result);
+      
+      try {
+        const pdf = await pdfjsLib.getDocument(typedarray).promise;
+        const page = await pdf.getPage(1);
+        
+        const viewport = page.getViewport({ scale: 1.5 });
+        const canvas = pdfCanvas;
+        const context = canvas.getContext('2d');
+        
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+        
+        const renderContext = {
+          canvasContext: context,
+          viewport: viewport
+        };
+        
+        await page.render(renderContext).promise;
+      } catch (error) {
+        console.error('Error rendering PDF:', error);
+        resumeText.style.display = 'block';
+        pdfCanvas.style.display = 'none';
+        resumeText.innerHTML = `<strong>Error loading PDF</strong><br><br>Could not render the PDF file.`;
+      }
+    };
+    fileReader.readAsArrayBuffer(file);
+  }
+});
