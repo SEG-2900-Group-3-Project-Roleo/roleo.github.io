@@ -72,7 +72,7 @@ hr{
     font-size: 3rem;
     font-weight: 2.5rem;
     color: #5833FF;
-    animation: logoColorShift 60s ease-in-out infinite;
+    animation: logoColorShift 30s ease-in-out infinite;
     cursor: pointer;
 }
 
@@ -94,7 +94,7 @@ hr{
     border: 2px solid #5833FF;
     border-radius: 20px;
     background-color: transparent;
-    animation: navBorderColorShift 60s ease-in-out infinite;
+    animation: navBorderColorShift 30s ease-in-out infinite;
 }
 
 .nav-link:hover {
@@ -102,7 +102,7 @@ hr{
 }
 
 #active {
-    animation: navActiveColorShift 60s ease-in-out infinite;
+    animation: navActiveColorShift 30s ease-in-out infinite;
     box-shadow: 0 0 10px rgba(88, 51, 255, 0.5);
 }
 
