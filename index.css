@@ -33,7 +33,7 @@ body::after {
     background: linear-gradient(to right, #0C0042, #D4BC4E);
     opacity: 0;
     z-index: -1;
-    animation: fadeGradient 60s ease-in-out infinite;
+    animation: fadeGradient 30s ease-in-out infinite;
 }
 
 @keyframes fadeGradient {
@@ -97,7 +97,7 @@ body::after {
     opacity: 0;
     position: relative;
     z-index: 10;
-    animation: logoColorShift 60s ease-in-out infinite;
+    animation: logoColorShift 30s ease-in-out infinite;
 }
 
 /* Branches Container */
@@ -131,7 +131,7 @@ body::after {
 
 .branch-line line,
 .branch-line path {
-    animation: lineColorShift 60s ease-in-out infinite;
+    animation: lineColorShift 30s ease-in-out infinite;
 }
 
 .branch-button {
@@ -231,13 +231,14 @@ body::after {
 }
 
 .branch-line.animate line {
-    animation: drawLine 1s ease-out forwards, lineColorShift 60s ease-in-out infinite;
+    animation: drawLine 1s ease-out forwards, lineColorShift 30s ease-in-out infinite;
 }
 
 .branch-line.animate path {
-    animation: drawLine 1s ease-out forwards, lineColorShift 60s ease-in-out infinite;
+    animation: drawLine 1s ease-out forwards, lineColorShift 30s ease-in-out infinite;
 }
 
 .branch-button.animate {
-    animation: fadeInButton 0.5s ease-out forwards, buttonColorShift 60s ease-in-out infinite;
+    animation: fadeInButton 0.5s ease-out forwards, buttonColorShift 30s ease-in-out infinite;
 }
+
