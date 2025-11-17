@@ -46,13 +46,16 @@
 }
 
 body {
-    font-family: "Lexend";
+    font-family: "Lexend", sans-serif;
     position: relative;
     color: #fff;
     min-height: 100vh;
-    padding: 1%;
+    /* padding: 1%; */
     width: 100%;
     border-collapse: collapse;
+    margin: 0;
+    padding-top: 100px;
+    color: #fff;
 }
 
 body::before {
