@@ -138,7 +138,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #ddf8fe, #15b181);
+    background: linear-gradient(to right, #0C0042, #D4BC4E);
     z-index: -2;
 }
 
@@ -149,7 +149,7 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #0C0042, #D4BC4E);
+    background: linear-gradient(to right, #ddf8fe, #15b181);
     opacity: 0;
     z-index: -1;
     animation: fadeGradient 60s ease-in-out infinite;
