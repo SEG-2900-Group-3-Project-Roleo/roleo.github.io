@@ -3,9 +3,9 @@ const swipeLeft = document.querySelector(".swipe-indicator.left");
 const swipeRight = document.querySelector(".swipe-indicator.right");
 
 const cardImages = [
-  "https://via.placeholder.com/400x500?text=Job+1",
-  "https://via.placeholder.com/400x500?text=Job+2",
-  "https://via.placeholder.com/400x500?text=Job+3"
+  "https://images.template.net/wp-content/uploads/2014/11/Sample-Basic-Resume-Templte.jpg",
+  "https://tse2.mm.bing.net/th/id/OIP.a0WSvRyTX98tgilHqTkhzwHaKc?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3",
+  "https://uploads-ssl.webflow.com/6023fdfa97944f09d6a27ac6/638074881958612aa6c6f17b_Resume.webp"
 ];
 
 cardImages.forEach((src, index) => {
@@ -123,3 +123,4 @@ resumeUpload.addEventListener('change', async (e) => {
     fileReader.readAsArrayBuffer(file);
   }
 });
+
