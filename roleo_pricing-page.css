@@ -50,11 +50,10 @@ body {
     position: relative;
     color: #fff;
     min-height: 100vh;
-    /* padding: 1%; */
+    padding: 1%;
     width: 100%;
     border-collapse: collapse;
     margin: 0;
-    padding-top: 100px;
     font-family: "Lexend", sans-serif;
     color: #fff;
 }
@@ -85,43 +84,38 @@ body::after {
     animation-delay: var(--animation-offset, 0s);
 }
 
-.nav{
+.nav {
     display: flex;
-    /* margin: 1%; */
     justify-content: space-between;
     align-items: center;
+    padding: 0 2rem;
     height: 5%;
 }
 
 .logo-top {
-    width: 25%;
-    /* height: auto; */
-    /* text-align: ; */
+    flex: 0 0 auto;
 }
 
 .logo {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
-    font-weight: 2.5rem;
     color: #5833FF;
     animation: logoColorShift 30s ease-in-out infinite;
     cursor: pointer;
 }
 
 .top-nav {
-    background-color: transparent;
     display: flex;
     gap: 15px;
-    align-items: center;
-    width:50%;
-    margin-left: 100px;
+    justify-content: center;
+    flex: 1;
+    font-family: "Lexend", sans-serif;
 }
 
 .nav-link {
     color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
-    font-weight: 1.5rem;
     padding: 0.5rem 1rem;
     border: 2px solid #5833FF;
     border-radius: 20px;
@@ -138,9 +132,9 @@ body::after {
     box-shadow: 0 0 10px rgba(88, 51, 255, 0.5);
 }
 
-.search{
-    width:10%;
-    align-items: center;
+.search {
+    flex: 0 0 auto;
+    width: 10%;
     border: 2px solid black;
     border-radius: 15px;
     padding: 0.5rem 1rem;
