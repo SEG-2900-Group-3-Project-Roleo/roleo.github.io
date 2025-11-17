@@ -28,7 +28,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Lexend", sans-serif;
     background: linear-gradient(to right, #0C0042, #D4BC4E);
     color: #fff;
     min-height: 100vh;
@@ -187,7 +187,7 @@ h1 {
     /* height: 500px; */
     padding: 5%;
     /* font-weight: lighter; */
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Lexend", sans-serif;
     /* color: rgb(119, 200, 232); */
     /* color: rgb(119, 200, 232); */
     /* margin:0; */
@@ -202,7 +202,7 @@ h2{
     color: #4DB6E2;
 }
 .text {
-    font-family:  Georgia, 'Times New Roman', Times, serif;
+    font-family: "Lexend", sans-serif;
     font-size: 1.5rem;
     color: rgb(99, 162, 183);
     /* font-weight: 100; */
@@ -219,7 +219,7 @@ h2{
 h3 {
     
   font-weight: lighter;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Lexend", sans-serif;
   color: rgb(56, 122, 148);
   padding: 5% 2%;
   /* font-size: 2.5rem;
