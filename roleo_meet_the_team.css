@@ -68,7 +68,7 @@ hr {
     font-weight: 700;
     color: #5833FF;
     line-height: 1;
-    animation: logoColorShift 60s ease-in-out infinite;
+    animation: logoColorShift 30s ease-in-out infinite;
     cursor: pointer;
 }
 
@@ -95,7 +95,7 @@ hr {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    animation: navBorderColorShift 60s ease-in-out infinite;
+    animation: navBorderColorShift 30s ease-in-out infinite;
 }
 
 .nav-link:hover {
@@ -103,20 +103,20 @@ hr {
 }
 
 #active {
-    animation: navActiveColorShift 60s ease-in-out infinite;
+    animation: navActiveColorShift 30s ease-in-out infinite;
     box-shadow: 0 0 10px rgba(88, 51, 255, 0.5);
 }
 
 .search {
-    height: 50px;
-    width: 180px;
-    padding: 0 15px;
-    border-radius: 15px;
+    width: 10%;
+    align-items: center;
     border: 2px solid black;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
     background-color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 
 body {
@@ -152,7 +152,7 @@ body::after {
     background: linear-gradient(to right, #ddf8fe, #15b181);
     opacity: 0;
     z-index: -1;
-    animation: fadeGradient 60s ease-in-out infinite;
+    animation: fadeGradient 30s ease-in-out infinite;
     animation-delay: var(--animation-offset, 0s);
 }
 
