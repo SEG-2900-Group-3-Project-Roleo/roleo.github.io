@@ -50,10 +50,15 @@ body {
     position: relative;
     color: #fff;
     min-height: 100vh;
-    padding: 1%;
+    /* padding: 1%; */
     width: 100%;
     border-collapse: collapse;
+    margin: 0;
+    padding-top: 100px;
+    font-family: "Lexend", sans-serif;
+    color: #fff;
 }
+
 
 body::before {
     content: '';
